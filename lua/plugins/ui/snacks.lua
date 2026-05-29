@@ -220,6 +220,54 @@ return {
 					},
 				},
 			},
+
+			picker = {
+				enabled = true,
+				prompt = " " .. icons.general.find .. " ",
+				ui_select = true, -- Replaces vim.ui.select with a beautiful picker
+
+				layout = {
+					preset = "telescope", -- Standard, centered floating layout
+				},
+
+				formatters = {
+					file = {
+						filename_first = true, -- Puts the filename visually first, muting the folder path!
+						truncate = "center",
+					},
+				},
+
+				previewers = {
+					diff = {
+						style = "fancy", -- Uses multi-column line numbers & syntax highlighting for diffs
+					},
+				},
+
+				win = {
+					input = {
+						keys = {
+							["<Esc>"] = { "close", mode = { "n", "i" } }, -- Closes instantly on escape
+						},
+					},
+				},
+
+				icons = {
+					ui = {
+						selected = icons.ui.selection .. " ",
+					},
+					git = {
+						added = icons.git.add,
+						modified = icons.git.change,
+						deleted = icons.git.delete,
+					},
+					diagnostics = {
+						Error = icons.diagnostics.error,
+						Warn = icons.diagnostics.warn,
+						Hint = icons.diagnostics.hint,
+						Info = icons.diagnostics.info,
+					},
+				},
+			},
 		}
 	end,
 }
