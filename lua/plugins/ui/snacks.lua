@@ -153,7 +153,7 @@ return {
 				height = { min = 1, max = 0.6 },
 				margin = { top = 0, right = 1, bottom = 0 },
 				padding = true,
-				gap = 0,
+				gap = 1,
 				sort = { "level", "added" },
 				level = vim.log.levels.TRACE,
 				icons = {
