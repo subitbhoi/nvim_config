@@ -1,173 +1,189 @@
 local M = {}
 
-M.ui = {
-  separator = "│",
-  vertical_bar = "│",
-  vertical_bar_thin = "▏",
-  rounded_left = "╭",
-  rounded_right = "╮",
-  rounded_bottom_left = "╰",
-  rounded_bottom_right = "╯",
-  horizontal = "─",
-  horizontal_thin = "╌",
-  expand_collapsed = "",
-  expand_expanded = "",
-  group = "󰙅",
-  split = "󰖲",
-  selection = "",
-}
-
-M.general = {
-  close     = "󰅖",
-  save      = "󰆓",
-  find      = "",
-  find_file = "󰱼",
-  files     = "󰈔",
-  recent    = "󰋚",
-  command   = "󰘳",
-  keymap    = "󰌌",
-  help      = "󰋖",
-  terminal  = "󰆍",
-  settings  = "󰒓",
-  ui        = "󰙅",
-  selection = "󰘥",
-  search    = "",
-  buffer    = "󰓩",
-  mode      = "󰀘",
-  readonly  = "󰌾",
-  filter    = "",
-  bug       = "",
-  clipboard = "󰅍",
-  exit      = "󰌑",
-  clear     = "󰅶",
-  disable   = "󱎭",
-}
-
-M.editing = {
-  delete = "󰅖",
-  insert = "󰦪",
-  replace = "󰛔",
-  select = "󰒅",
-  comment = "󰅺",
-  format = "󰒓",
-  pair = "󰆴",
-  tag = "󰗀",
-}
-
-M.navigation = {
-  explorer = "󰉋",
-  folder = "󰉋",
-  folder_open = "󰝰",
-  folder_empty = "󰉖",
-  file = "󰈔",
-  search = "󰇉",
-  buffer = "󰓩",
-  source = "󰒓",
-}
-
-M.git = {
-  git = "󰊢",
-  branch = "",
-  add = "",
-  change = "",
-  delete = "",
-  topdelete = "󰍵",
-  rename = "󰁕",
-  untracked = "",
-  ignored = "",
-  staged = "",
-  unstaged = "󰄱",
-  conflict = "",
-  blame = "󰊢",
-}
-
-M.diagnostics = {
-  error = "",
-  warn = "",
-  info = "",
-  hint = "",
-  trace = "",
-  diagnostic = "󰒡",
-}
-
-M.lsp = {
-  server       = "󰒓",
-  code_action  = "󰌵",
-  hover        = "󰞋",
-  rename       = "󰑕",
-  definition   = "󰒕",
-  implementation = "󰡱",
-  references   = "󰈇",
-  formatting   = "󰉢",
-}
-
 M.completion = {
-  text = "󰉿",
-  method = "󰆧",
-  function_ = "󰊕",
-  constructor = "",
-  field = "󰜢",
-  variable = "󰂡",
-  class = "󰠱",
-  interface = "",
-  module = "󰏗",
-  property = "󰜢",
-  unit = "󰑭",
-  value = "󰎠",
-  enum = "",
-  keyword = "󰌋",
-  snippet = "󰘍",
-  color = "󰏘",
-  file = "󰈔",
-  reference = "󰈇",
-  folder = "󰉋",
-  enum_member = "",
-  constant = "󰏿",
-  struct = "󰙅",
-  event = "",
-  operator = "󰆕",
-  type_parameter = "󰊄",
-}
-
-M.filetypes = {
-  html = "󰌝",
-  css = "󰌜",
-  javascript = "󰌞",
-  typescript = "󰛦",
-  jsx = "󰜈",
-  tsx = "󰛦",
-  json = "󰘦",
-  yaml = "󰰂",
-  markdown = "󰍔",
-  lua = "󰢱",
-  shell = "󰆍",
-}
-
-M.dev = {
-  react = "󰞺",
-  nextjs = "󰇄",
-  nodejs = "󰎙",
-  tailwind = "󱏿",
-  docker = "󰡨",
-  package = "󰏗",
-  test = "󰙨",
-}
-
-M.mason = {
-  package_installed = "",
-  package_pending = "",
-  package_uninstalled = "",
+	class = "󰠱",
+	color = "󰏘",
+	constant = "󰏿",
+	constructor = "",
+	enum = "",
+	enum_member = "",
+	event = "",
+	field = "󰜢",
+	file = "󰈔",
+	folder = "󰉋",
+	function_ = "󰊕",
+	interface = "",
+	keyword = "󰌋",
+	method = "󰆧",
+	module = "󰏗",
+	operator = "󰆕",
+	property = "󰜢",
+	reference = "󰈇",
+	snippet = "󰘍",
+	struct = "󰙅",
+	text = "󰉿",
+	type_parameter = "󰊄",
+	unit = "󰑭",
+	value = "󰎠",
+	variable = "󰂡",
 }
 
 M.dashboard = {
-  find_file = "",
-  new_file = "",
-  find_text = "",
-  recent_files = "",
-  config = "",
-  restore_session = "",
-  lazy = "󰒲",
-  quit = "",
+	config = "",
+	find_file = "",
+	find_text = "",
+	lazy = "󰒲",
+	new_file = "",
+	quit = "",
+	recent_files = "",
+	restore_session = "",
+}
+
+M.dev = {
+	docker = "󰡨",
+	nextjs = "󰇄",
+	nodejs = "󰎙",
+	package = "󰏗",
+	react = "󰞺",
+	tailwind = "󱏿",
+	test = "󰙨",
+}
+
+M.diagnostics = {
+	diagnostic = "󰒡",
+	error = "",
+	hint = "",
+	info = "",
+	trace = "",
+	warn = "",
+}
+
+M.editing = {
+	comment = "󰅺",
+	delete = "󰆴",
+	delete_line = "",
+	format = "󰒓",
+	insert = "󰦪",
+	pair = "󰆴",
+	pencil = "󰑕",
+	replace = "󰛔",
+	select = "󰒅",
+	tag = "󰗀",
+}
+
+M.filetypes = {
+	css = "󰌜",
+	html = "󰌝",
+	javascript = "󰌞",
+	json = "󰘦",
+	jsx = "󰜈",
+	lua = "󰢱",
+	markdown = "󰍔",
+	shell = "󰆍",
+	tsx = "󰛦",
+	typescript = "󰛦",
+	yaml = "󰰂",
+}
+
+M.general = {
+	buffer = "",
+	bug = "",
+	clear = "󰅶",
+	clipboard = "󰅍",
+	clipboardcopy = "󱉥",
+	close = "󰈆",
+	close_buffer = "󰅗",
+	command = "󰘳",
+	disable = "󱎭",
+	exit = "󰌑",
+	files = "󰈔",
+	filter = "",
+	find = "",
+	find_file = "󰱼",
+	help = "󰋖",
+	keymap = "󰌌",
+	mode = "󰀘",
+	readonly = "󰌾",
+	recent = "󰋚",
+	save = "󰆓",
+	search = "",
+	selection = "󰘥",
+	settings = "󰒓",
+	terminal = "󰆍",
+	ui = "",
+}
+
+M.git = {
+	add = "",
+	blame = "󰊢",
+	branch = "",
+	change = "",
+	conflict = "",
+	delete = "",
+	git = "󰊢",
+	ignored = "",
+	rename = "󰁕",
+	staged = "",
+	topdelete = "󰍵",
+	unstaged = "󰄱",
+	untracked = "",
+}
+
+M.lsp = {
+	code_action = "󰌵",
+	definition = "󰒕",
+	formatting = "󰉢",
+	hover = "󰞋",
+	implementation = "󰡱",
+	references = "󰈇",
+	rename = "󰑕",
+	server = "󰒓",
+}
+
+M.mason = {
+	package_installed = "",
+	package_pending = "",
+	package_uninstalled = "",
+}
+
+M.navigation = {
+	buffer = "󰓩",
+	explorer = "",
+	explorer_focus = "󱞊",
+	file = "󰈔",
+	folder = "󰉋",
+	folder_empty = "󰉖",
+	folder_open = "󰝰",
+	search = "󰇉",
+	source = "󰒓",
+}
+
+M.ui = {
+	expand_collapsed = "",
+	expand_expanded = "",
+	group = "󰙅",
+	horizontal = "─",
+	horizontal_thin = "╌",
+	rounded_bottom_left = "╰",
+	rounded_bottom_right = "╯",
+	rounded_left = "╭",
+	rounded_right = "╮",
+	selection = "",
+	separator = "│",
+	split = "󱤗",
+	vertical_bar = "│",
+	vertical_bar_thin = "▏",
+}
+
+M.whichkey = {
+	buffer = "",
+	code = "",
+	git = "",
+	lsp = "󰰌",
+	search = "",
+	split = "󰯌",
+	terminal = "",
+	ui = "",
 }
 
 return M
