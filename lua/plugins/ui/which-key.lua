@@ -49,9 +49,10 @@ return {
       },
 
       icons = {
+        rules = false, -- Keeps which-key from guessing icons, ensuring it only uses what keymaps.lua provides
         breadcrumb = icons.ui.separator,
         separator = icons.ui.vertical_bar,
-        group = icons.ui.group,
+        group = "",    -- Prevents the double-folder icon prefix
       },
 
       sort = {
@@ -60,48 +61,6 @@ return {
         "group",
         "alphanum",
         "mod",
-      },
-
-      spec = {
-        {
-          "<leader>f",
-          group = icons.general.search .. " Find",
-        },
-
-        {
-          "<leader>g",
-          group = icons.git.git .. " Git",
-        },
-
-        {
-          "<leader>b",
-          group = icons.navigation.buffer .. " Buffers",
-        },
-
-        {
-          "<leader>l",
-          group = icons.lsp.server .. " LSP",
-        },
-
-        {
-          "<leader>u",
-          group = icons.general.ui .. " UI",
-        },
-
-        {
-          "<leader>s",
-         group = icons.ui.split .. " Splits",
-        },
-
-        {
-          "<leader>t",
-          group = icons.general.terminal .. " Terminal",
-        },
-
-        {
-          "<leader>c",
-          group = icons.general.command .. " Code",
-        },
       },
     }
   end,
