@@ -8,17 +8,6 @@ return {
     "LazyGitFilter",
     "LazyGitFilterCurrentFile",
   },
-  keys = function()
-    local icons = require("core.icons")
-
-    return {
-      { "<leader>gg", "<cmd>LazyGit<cr>", desc = icons.git.git .. " Git UI" },
-      { "<leader>gG", "<cmd>LazyGitCurrentFile<cr>", desc = icons.git.git .. " Current file git UI" },
-      { "<leader>gc", "<cmd>LazyGitConfig<cr>", desc = icons.git.git .. " LazyGit config" },
-      { "<leader>gf", "<cmd>LazyGitFilter<cr>", desc = icons.git.git .. " Git filter" },
-      { "<leader>gF", "<cmd>LazyGitFilterCurrentFile<cr>", desc = icons.git.git .. " File git filter" },
-    }
-  end,
   dependencies = {
     "nvim-lua/plenary.nvim",
   },

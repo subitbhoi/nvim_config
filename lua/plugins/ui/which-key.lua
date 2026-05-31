@@ -52,7 +52,7 @@ return {
         rules = false, -- Keeps which-key from guessing icons, ensuring it only uses what keymaps.lua provides
         breadcrumb = icons.ui.separator,
         separator = icons.ui.vertical_bar,
-        group = "",    -- Prevents the double-folder icon prefix
+        group = "", -- Prevents the double-folder icon prefix
       },
 
       sort = {
